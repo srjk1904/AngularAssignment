@@ -1,0 +1,150 @@
+<!-- <style>
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(66, 134, 52, 0.1);
+  }
+
+  .card-header {
+    background-color: #2ea047;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .card-body {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+</style>
+
+<div class="container">
+  <div class="card mt-4">
+    <div class="card-header">
+      <h2 class="text-center">Product Details</h2>
+    </div>
+
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-8">
+          <p><strong>Product Name:</strong> {{ product?.name }}</p>
+
+          <p><strong>Category:</strong> {{ product?.category }}</p>
+
+          <p><strong>Description:</strong> {{ product?.description }}</p>
+
+          <p>
+            <strong>Price:</strong> $
+
+            {{ product?.price }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(66, 134, 52, 0.1);
+        }
+
+        .card-header {
+            background-color: #2ea047;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+
+        .card-body {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            border-bottom: 1px solid #ddd; /* Add border to each row */
+        }
+
+        .cell {
+            flex: 1;
+            padding: 10px;
+            border-right: 1px solid #ddd; /* Add border to each cell */
+        }
+
+        .cell:last-child {
+            border-right: none; /* Remove border for the last cell in each row */
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card mt-4">
+            <div class="card-header">
+                <h2 class="text-center">Product Details</h2>
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="cell"><strong>Product Name:</strong></div>
+                    <div class="cell">{{ product?.name }}</div>
+                </div>
+
+                <div class="row">
+                    <div class="cell"><strong>Category:</strong></div>
+                    <div class="cell">{{ product?.category }}</div>
+                </div>
+
+                <div class="row">
+                    <div class="cell"><strong>Description:</strong></div>
+                    <div class="cell">{{ product?.description }}</div>
+                </div>
+
+                <div class="row">
+                    <div class="cell"><strong>Price:</strong></div>
+                    <div class="cell">${{ product?.price }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
